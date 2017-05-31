@@ -22,6 +22,8 @@ public class Main
         empleado1.setNumHijos(3);
         
         imprimir_emp(empleado1);
+        
+        System.out.println("Gracias por usar nuestro programa");
     }
 
     public static void imprimir_emp(Empleado empleado1) 
