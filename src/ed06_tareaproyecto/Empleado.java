@@ -14,6 +14,7 @@ public class Empleado
 
     /**
      * @return the dni
+     * Getter para dni
      */
     public String getDni() {
         return dni;
@@ -21,6 +22,7 @@ public class Empleado
 
     /**
      * @param dni the dni to set
+     * Setter para dni
      */
     public void setDni(String dni) {
         this.dni = dni;
@@ -28,6 +30,7 @@ public class Empleado
 
     /**
      * @return the nombre
+     * Getter para nombre
      */
     public String getNombre() {
         return nombre;
@@ -35,6 +38,7 @@ public class Empleado
 
     /**
      * @param nombre the nombre to set
+     * Setter para nombre
      */
     public void setNombre(String nombre) {
         this.nombre = nombre;
@@ -42,6 +46,7 @@ public class Empleado
 
     /**
      * @return the direccion
+     * Getter para direccion
      */
     public String getDireccion() {
         return direccion;
@@ -49,6 +54,7 @@ public class Empleado
 
     /**
      * @param direccion the direccion to set
+     * Setter para direccion
      */
     public void setDireccion(String direccion) {
         this.direccion = direccion;
@@ -56,6 +62,7 @@ public class Empleado
 
     /**
      * @return the cargo
+     * Getter para cargo
      */
     public String getCargo() {
         return cargo;
@@ -63,6 +70,7 @@ public class Empleado
 
     /**
      * @param cargo the cargo to set
+     * Setter para cargo
      */
     public void setCargo(String cargo) {
         this.cargo = cargo;
@@ -70,6 +78,7 @@ public class Empleado
 
     /**
      * @return the numHijos
+     * Getter para numHijos
      */
     public int getNumHijos() {
         return numHijos;
@@ -77,16 +86,39 @@ public class Empleado
 
     /**
      * @param numHijos the numHijos to set
+     * Setter para numHijos
      */
     public void setNumHijos(int numHijos) {
         this.numHijos = numHijos;
     }
+    
+    /**
+     * Dni del empleado
+     */
     private String dni;
+    /**
+     * Nombre del empleado
+     */
     private String nombre;
+    /**
+     * Direccion del empleado
+     */
     private String direccion;
+    /**
+     * Cargo del empleado
+     */
     private String cargo;
+    /**
+     * Numero de hijos del empleado
+     */
     private int numHijos;
     
+    /**
+     *
+     * @param dni
+     * @param nombre
+     * Contructor de clase empleado
+     */
     public Empleado (String dni, String nombre)
     {
         this.dni=dni;
@@ -95,6 +127,12 @@ public class Empleado
         this.numHijos=0;
     }
     
+    /**
+     *
+     * @param base
+     * @return
+     * Metodo para calcular el sueldo total del empleado
+     */
     public double calcula_sueldo(double base)
     {
         double total=base;
