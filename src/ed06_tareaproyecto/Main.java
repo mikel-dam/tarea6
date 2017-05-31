@@ -14,6 +14,7 @@ public class Main
 
     /**
      * @param args the command line arguments
+     * Funcion main
      */
     public static void main(String[] args) {
         Empleado empleado1 = new Empleado("1245678M","Perico de los Palotes");
@@ -26,6 +27,11 @@ public class Main
         System.out.println("Gracias por usar nuestro programa");
     }
 
+    /**
+     *
+     * @param empleado1
+     * Imprime los datos del empleado
+     */
     public static void imprimir_emp(Empleado empleado1) 
     {
         System.out.println("DNI: "+empleado1.getDni());
